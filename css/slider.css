@@ -6,7 +6,7 @@
 
 #r8-balloon-radio-group-wrapper {
     margin: 0 auto;
-    width: 32em;
+    width: 35em;
     display: block;
 
     /* Radio Elements */
@@ -14,6 +14,18 @@
 
 #r8-balloon-radio-group-wrapper :disabled+label {
     color: darkgray;
+}
+
+.personality-container {
+    display: inline-block;
+    width: 5em;
+}
+
+.personality-container-below {
+    display: inline-block;
+
+    width: 5em;
+    margin-left: 1em;
 }
 
 
@@ -64,7 +76,9 @@
 #r8-balloon-radio-group-wrapper ul li {
     display: inline-block;
     transform: rotateZ(45deg);
+
 }
+
 
 #r8-balloon-radio-group-wrapper .radio {
     position: relative;
@@ -144,7 +158,7 @@
     animation: unset !important;
 }
 
-#r8-logo-coin {
+/* #r8-logo-coin {
     position: absolute;
     width: 3.5rem;
     height: 3.5rem;
@@ -168,7 +182,7 @@
     width: calc(90% - .6rem);
     height: calc(90% - .6rem);
     z-index: -1;
-}
+} */
 
 @media (min-width: 75rem) {
     #r8-balloon-radio-group-wrapper {

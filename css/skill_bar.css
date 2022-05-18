@@ -1,3 +1,5 @@
+@import '/css/style.css';
+
 /* * {
     margin: 0;
     padding: 0;
@@ -13,9 +15,9 @@ body {
     background: #111;
 } */
 
-.skills {
-    /* width: 100%;
-    max-width: 600px; */
+.section__item--my-skills {
+    width: 100%;
+    max-width: 600px;
     padding: 0 20px;
 }
 
@@ -35,13 +37,13 @@ body {
 
 .skill-per {
     height: 14px;
-    background: #d13639;
+    background: var(--clr-accent);
     border-radius: 3px;
     position: relative;
     animation: fillBars 2.5s 1;
 }
 
-.skill-per::before {
+/* .skill-per::before {
     content: attr(per);
     position: absolute;
     padding: 4px 6px;
@@ -51,9 +53,9 @@ body {
     top: -35px;
     right: 0;
     transform: translateX(50%);
-}
+} */
 
-.skill-per::after {
+/* .skill-per::after {
     content: "";
     position: absolute;
     width: 10px;
@@ -63,7 +65,7 @@ body {
     right: 0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
-}
+} */
 
 @keyframes fillBars {
     from {
