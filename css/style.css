@@ -501,3 +501,10 @@ header {
     max-height: 500px;
     margin: 0 auto;
 }
+
+.portfolio-item-link {
+    display: block;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
