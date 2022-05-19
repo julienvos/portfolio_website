@@ -332,6 +332,10 @@ header {
     opacity: 0.4;
 }
 
+.skills-checkbox {
+    display: block;
+    margin-top: 2em;
+}
 
 
 @media (min-width: 800px) {
@@ -352,10 +356,19 @@ header {
     max-width: 20em;
 }
 
-.skills-checkbox {
-    display: block;
-    margin-top: 2em;
+.about-me-interests {
+    display: flex;
+    gap: 3em;
 }
+
+.about-me-interests-title {
+    margin: 0.5em 0 0.5em;
+}
+
+.about-me-interests-list {
+    list-style-type: square;
+}
+
 
 @media (min-width: 600px) {
     .about-me {
@@ -374,8 +387,10 @@ header {
         z-index: 2;
     }
 
+
     .section__title--about {
         grid-area: title;
+        margin-bottom: 0.5em;
     }
 
     .section__subtitle--about {

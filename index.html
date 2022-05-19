@@ -67,7 +67,7 @@
                 <div id="r8-balloon-radio-group-wrapper">
 
                     <ul>
-                        <div class="personality-container">
+                        <div class="personality-container personality-container-left">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub class="personality-text">Consistent</sub>
                         </div>
@@ -94,7 +94,7 @@
                         <li><input id="op_4" class="radio r8-radio-float" type="radio" name="demo-radio-group" value="5"
                                 disabled /></li>
 
-                        <div class="personality-container-below">
+                        <div class="personality-container personality-container-right">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub class="personality-text">Open voor verandering</sub>
                         </div>
@@ -106,7 +106,7 @@
 
                     <ul>
 
-                        <div class="personality-container">
+                        <div class="personality-container personality-container-left">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub class="personality-text">Spontaan</sub>
                         </div>
@@ -133,7 +133,7 @@
                         <li><input id="op_4" class="radio r8-radio-float" type="radio" name="demo-radio-group2"
                                 value="5" checked /></li>
 
-                        <div class="personality-container-below">
+                        <div class="personality-container personality-container-right">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub class="personality-text">Bewust</sub>
                         </div>
@@ -144,7 +144,7 @@
                 <div id="r8-balloon-radio-group-wrapper">
 
                     <ul>
-                        <div class="personality-container">
+                        <div class="personality-container personality-container-left">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub class="personality-text">Introvert</sub>
                         </div>
@@ -171,7 +171,7 @@
                         <li><input id="op_4" class="radio r8-radio-float" type="radio" name="demo-radio-group3"
                                 value="5" disabled /></li>
 
-                        <div class="personality-container-below">
+                        <div class="personality-container personality-container-right">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub class="personality-text">Extravert</sub>
                         </div>
@@ -182,7 +182,7 @@
                 <div id="r8-balloon-radio-group-wrapper">
 
                     <ul>
-                        <div class="personality-container">
+                        <div class="personality-container personality-container-left">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub>Kritisch</sub>
                         </div>
@@ -211,7 +211,7 @@
                         <li><input id="op_4" class="radio r8-radio-float" type="radio" name="demo-radio-group4"
                                 value="5" disabled /></li>
 
-                        <div class="personality-container-below">
+                        <div class="personality-container personality-container-right">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub class="personality-text">Meegaand</sub>
                         </div>
@@ -222,7 +222,7 @@
                 <div id="r8-balloon-radio-group-wrapper">
 
                     <ul>
-                        <div class="personality-container">
+                        <div class="personality-container personality-container-left">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub class="personality-text">Stabiel</sub>
                         </div>
@@ -235,10 +235,10 @@
                         </li>
                         <li>
                             <input id="op_1" class="radio r8-radio-float" type="radio" name="demo-radio-group5"
-                                value="1" checked />
+                                value="1" disabled />
                         </li>
                         <li><input id="op_2" class="radio r8-radio-float" type="radio" name="demo-radio-group5"
-                                value="2" disabled />
+                                value="2" checked />
 
                         </li>
                         <li><input id="op_3" class="radio r8-radio-float" type="radio" name="demo-radio-group5"
@@ -250,7 +250,7 @@
                                 value="5" disabled /></li>
 
 
-                        <div class="personality-container-below">
+                        <div class="personality-container personality-container-right">
                             <i class="fa-solid fa-face-grin-beam"></i>
                             <sub class="personality-text">Neurotisch</sub>
                         </div>
@@ -276,10 +276,19 @@
                     </div>
                 </div>
 
+
+
                 <div class="skill">
                     <div class="skill-name">HTML/CSS</div>
                     <div class="skill-bar">
                         <div class="skill-per" per="60%" style="max-width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">MYSQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="50%" style="max-width:50%"></div>
                     </div>
                 </div>
 
@@ -289,12 +298,17 @@
                         <div class="skill-per" per="40%" style="max-width:40%"></div>
                     </div>
                 </div>
+
+
                 <div class="skills-checkbox">
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked disabled>
-                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="skill-checkbox-docker" name="Docker" checked disabled>
+                    <label for="skill-checkbox-docker"> Docker</label>
                 </div>
 
-
+                <div class="skills-checkbox">
+                    <input type="checkbox" id="skill-checkbox-git" name="Git" checked disabled>
+                    <label for="skill-checkbox-git">Git</label>
+                </div>
 
             </div>
 
@@ -306,13 +320,40 @@
     </section>
 
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about">Something here</p>
+        <h2 class="section__title section__title--about">Wie ben ik?</h2>
+        <p class="section__subtitle section__subtitle--about">MSc Sport Sciences | IT Trainee YoungCapital NEXT
+        </p>
 
         <div class="about-me__body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas, deserunt libero quis sapiente
-                nisi. Voluptatem eaque quos vel adipisci, pariatur saepe illum quasi qui ipsam dolorem est. Iusto,
-                dolor?</p>
+
+            <div class="about-me-interests">
+
+                <ul class="about-me-interests-list">
+                    <h3 class="about-me-interests-title">Hobby's</h3>
+                    <li>Fitness</li>
+                    <li>Films</li>
+                    <li>Wandelen</li>
+                    <li>Lezen (Non-Fictie)</li>
+                </ul>
+
+                <ul class="about-me-interests-list">
+                    <h3 class="about-me-interests-title">Ambities</h3>
+                    <li>Full-Development</li>
+                    <li>Toepassingen AI</li>
+                    <li>Piano spelen</li>
+                    <li>Spaans</li>
+                </ul>
+
+            </div>
+
+            <p>Sinds feb' 2020 ben afgestudeerd aan de Rijksuniversiteit Groningen als Bewegingswetenschapper met een
+                Masterspecialisatie in de Sport. Ik vind het supertof om met sporters te werken, alleen is deze markt
+                relatief klein vanuit mijn invalshoek. Daarom heb ik tijdens/na mijn studie Bewegingswetenschappen
+                besloten om mij breder te oriënteren. Het vakgebied Datawetenschap sluit nauw aan bij opgedane
+                expertise, door de overlap van statistiek, werken met data en rapporteren van data. Door veel zelfstudie
+                heb ik mijzelf ontwikkeld in dit vakgbied en ben daarnaast geinteresseerd geraakt in web/app
+                development. </p>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis omnis quas architecto distinctio
                 temporibus magni dignissimos atque dolorem sequi numquam.</p>
         </div>
