@@ -554,3 +554,15 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* portfolio flutter app */
+
+.portfolio__images--flutter-app {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    position: relative;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+    max-width: 1000px;
+    margin: 0 auto 2em;
+}
