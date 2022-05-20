@@ -431,6 +431,9 @@ header {
     background: var(--clr-accent);
     overflow: hidden;
     position: relative;
+    display: grid;
+    /* grid om alleen de logos centraal te krijgen */
+
 }
 
 .portfolio__image {
@@ -444,8 +447,6 @@ header {
 
 }
 
-
-
 .portfolio__item:focus {
     position: relative;
     z-index: 3;
@@ -453,10 +454,52 @@ header {
 }
 
 .portfolio__image:hover,
-.portfolio__item:focus .portfolio__image {
+.portfolio__link:focus .portfolio__image {
     transform: scale(1.2);
     opacity: 0.7;
 }
+
+.portfolio__logos {
+    display: none;
+}
+
+.portfolio__item:hover .portfolio__logos {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+
+.portfolio__logo--github {
+    font-size: 2.5em;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+    border-radius: 0.1em;
+    opacity: 0.7;
+}
+
+.portfolio__logo--colab {
+    max-width: 5em;
+}
+
+.portfolio__item--title {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+
+.portfolio__item:hover .portfolio__item--title {
+    display: none;
+}
+
+.portfolio__item--font {
+    opacity: 0.7;
+}
+
+
 
 .footer {
     background-color: var(--clr-dark);
