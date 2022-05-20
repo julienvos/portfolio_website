@@ -314,7 +314,7 @@ header {
 .skills {
     background: var(--clr-accent);
     color: var(--clr-light);
-    background-image: url('/other_desk.png');
+    background-image: url('../general\ _images/other_desk.png');
     background-size: cover;
     text-align: start;
 }
