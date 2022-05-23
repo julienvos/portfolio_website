@@ -41,7 +41,7 @@ body {
     background: var(--clr-accent);
     border-radius: 3px;
     position: relative;
-    animation: emptyBars 2.5s 1;
+    animation: emptyBars 1s 1;
 
 }
 
