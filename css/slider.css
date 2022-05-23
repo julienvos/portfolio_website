@@ -6,9 +6,9 @@
 
 #r8-balloon-radio-group-wrapper {
     margin: 0 auto;
-    width: 35em;
-    display: block;
-
+    display: inline;
+    max-width: fit-content;
+    white-space: nowrap;
     /* Radio Elements */
 }
 
@@ -23,9 +23,11 @@
 
 .personality-container-right {
     display: inline-block;
+    /* margin-left: 1em; */
+}
 
-    width: 8.5em;
-    margin-left: 1em;
+.section__item--personality {
+    max-width: 70%;
 }
 
 
@@ -81,9 +83,10 @@
 
 
 #r8-balloon-radio-group-wrapper .radio {
+    display: inline-block;
     position: relative;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5em;
+    height: 1.5em;
     margin: 0.67rem;
     margin-top: 0;
     cursor: pointer;
