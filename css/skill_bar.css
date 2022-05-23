@@ -27,6 +27,7 @@ body {
     color: #f1f1f1;
     text-transform: uppercase;
     margin: 20px 0;
+
 }
 
 .skill-bar {
@@ -40,7 +41,12 @@ body {
     background: var(--clr-accent);
     border-radius: 3px;
     position: relative;
-    animation: fillBars 2.5s 1;
+    animation: emptyBars 2.5s 1;
+
+}
+
+.skill-per.show-bars {
+    animation: fillBars 4s 1;
 }
 
 /* .skill-per::before {
@@ -74,6 +80,16 @@ body {
 
     to {
         width: 100%;
+    }
+}
+
+@keyframes emptyBars {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
     }
 }
 
