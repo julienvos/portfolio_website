@@ -321,6 +321,8 @@ header {
 
 .section__body--skills {
     margin-bottom: 2em;
+    position: relative;
+
 }
 
 .section__title--skills {

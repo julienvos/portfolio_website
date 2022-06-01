@@ -30,6 +30,12 @@
     max-width: 70%;
 }
 
+@media (max-width: 500px) {
+    .section__item--personality {
+        display: none;
+    }
+}
+
 
 
 /* #r8-balloon-radio-group-wrapper label {
