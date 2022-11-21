@@ -1,14 +1,16 @@
-const navToggle = document.querySelector('.nav-toggle');
+const navToggle = document.querySelector(".nav-toggle");
 
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
+navToggle.addEventListener("click", () => {
+  document.body.classList.toggle("nav-open");
 });
 
+const navLinks = document.querySelectorAll(".nav__link");
 
-
-const navLinks = document.querySelectorAll('.nav__link');
-
-navLinks.forEach(link => link.addEventListener('click', () => document.body.classList.remove('nav-open')))
+navLinks.forEach((link) =>
+  link.addEventListener("click", () =>
+    document.body.classList.remove("nav-open")
+  )
+);
 
 // // Create the observer
 // const observer = new IntersectionObserver(entries => {
@@ -29,22 +31,21 @@ navLinks.forEach(link => link.addEventListener('click', () => document.body.clas
 // // Tell the observer which elements to track
 // observer.observe(document.querySelector('.skill-per-wrapper'));
 
-
 // get skill-per class
 
-const bars = document.querySelectorAll('.skill-per')
+const bars = document.querySelectorAll(".skill-per");
 
 // Create observer
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        entry.target.classList.toggle('show-bars', entry.isIntersecting)
-    })
-}, { threshold: 1, rootMargin: "-100px" })
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("show-bars", entry.isIntersecting);
+      if (entry.isIntersecting) observer.unobserve(entry.target);
+    });
+  },
+  { threshold: 1, rootMargin: "-100px" }
+);
 
-bars.forEach(bar => {
-    observer.observe(bar)
-})
-
-
-
-
+bars.forEach((bar) => {
+  observer.observe(bar);
+});
